@@ -24,11 +24,11 @@ class Tag(models.Model):
 class Product(models.Model):
 
     CAT = (
-        ("I", "Indoors"),("O", "Out door"),
+        ("Indoors", "Indoors"),("Out", "Out door"),
     )
     name = models.CharField(max_length=20, null=True)
     price = models.FloatField(null=True)
-    category = models.CharField(max_length=1, null=True, choices=CAT)
+    category = models.CharField(max_length=7, null=True, choices=CAT)
     description = models.CharField(max_length=20, null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     tags = models.ManyToManyField(Tag)
