@@ -3,8 +3,9 @@ from . import views
 
 urlpatterns = [
     path("", views.home, name="home"),
-    path("customer/", views.customer, name="cus"),
+    path("customer/<str:pk>/", views.customer, name="cus"),
     path("navbar/", views.navbar, name="nav"),
     path("products/", views.products, name="prod"),
     path("status/", views.status, name= "status"),
+    path("order/", views.createOrder, name = "order")
 ]
