@@ -7,5 +7,7 @@ urlpatterns = [
     path("navbar/", views.navbar, name="nav"),
     path("products/", views.products, name="prod"),
     path("status/", views.status, name= "status"),
-    path("order/", views.createOrder, name = "order")
+    path("order/", views.createOrder, name = "order"),
+    path("update/<str:pk>/", views.updateOrder, name ="update"),
+    path("delete/<str:pk>", views.deleteOrder, name = "delete")
 ]

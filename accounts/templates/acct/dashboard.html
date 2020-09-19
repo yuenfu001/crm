@@ -50,8 +50,8 @@
 					<td> {{i.product}} </td>
 					<td> {{i.date_created}} </td>
 					<td> {{i.status}} </td>
-					<td> <a class="btn btn-sm btn-info" href="">Update </td>
-					<td> <a class="btn btn-sm btn-danger" href="">Delete </td>
+					<td> <a class="btn btn-sm btn-info" href="{% url 'update' i.id %}">Update </td>
+					<td> <a class="btn btn-sm btn-danger" href="{% url 'delete' i.id %}">Delete </td>
 				</tr>
 			{% endfor %}
 
