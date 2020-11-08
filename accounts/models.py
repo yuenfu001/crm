@@ -50,6 +50,6 @@ class Order(models.Model):
     
 
     def __str__(self):
-        return f"{self.customer} {self.product} {self.status}"
+        return f"{self.customer}  {self.product}"
 
     # LOAN STATUS is a called a tuple

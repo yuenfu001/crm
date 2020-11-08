@@ -9,5 +9,6 @@ urlpatterns = [
     path("status/", views.status, name= "status"),
     path("order/", views.createOrder, name = "order"),
     path("update/<str:pk>/", views.updateOrder, name ="update"),
-    path("delete/<str:pk>", views.deleteOrder, name = "delete")
+    path("delete/<str:pk>", views.deleteOrder, name = "delete"),
+    
 ]

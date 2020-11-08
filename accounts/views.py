@@ -84,3 +84,4 @@ def deleteOrder(request, pk):
 
     context = {"item":order}
     return render(request,"acct/delete.html",context )
+
